@@ -3,15 +3,6 @@
 
 
 
-*{
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-
-}
 
 .container{width: 90%; margin: auto;}
 
@@ -23,4 +14,7 @@
 .link:hover{
     color: #ff5252;
     
+}
+.MuiBadge-badge{
+    background-color: #ff5252 !important;
 }
