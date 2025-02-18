@@ -4,7 +4,14 @@
 
 
 
-.container{width: 90%; margin: auto;}
+body{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    background: #f5f0f0;
+}
+
+
+.container{width: 95%; margin: auto;}
 
 /* header .top-strip{ border-top: 1px solid rgba(0,0,0,0.1); border-bottom: 1px solid rgba(0,0,0,0.1);} */
 
