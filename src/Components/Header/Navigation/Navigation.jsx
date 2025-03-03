@@ -4,10 +4,11 @@ import { RiMenu2Fill } from 'react-icons/ri';
 import { LiaAngleDownSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 import { GoRocket } from "react-icons/go";
+import CategoryPanel from './CategoryPanel';
 
 
 function Navigation() {
-  return (
+  return (<>
     <nav className="!py-2">
       <div className="container flex items-center justify-end gap-8  ">
         <div className="col_1  w-[20%]">
@@ -50,6 +51,10 @@ function Navigation() {
         </div>
       </div>
     </nav>
+    <CategoryPanel/>
+    </>
+
+ 
   );
 }
 
