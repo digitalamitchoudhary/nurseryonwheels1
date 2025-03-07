@@ -1,5 +1,5 @@
 import Button from '@mui/material/Button';
-import React from 'react';
+import React, { useState } from 'react';
 import { RiMenu2Fill } from 'react-icons/ri';
 import { LiaAngleDownSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
@@ -8,11 +8,17 @@ import CategoryPanel from './CategoryPanel';
 
 
 function Navigation() {
+    const [isOpenCatPanel, setIsOpenCatPanel] = useState(false)
+  
+    const openCategoryPanel= (params)=> {
+      setIsOpenCatPanel(true);
+    }
+
   return (<>
     <nav className="!py-2">
       <div className="container flex items-center justify-end gap-8  ">
         <div className="col_1  w-[20%]">
-          <Button className="!text-black w-full gap-2 ">
+          <Button className="!text-black w-full gap-2 " onClick={openCategoryPanel}>
             <RiMenu2Fill className="text-[18px]" />
             Shop By Categories
             <LiaAngleDownSolid className="text-[13px] !ml-auto font-bold" />
@@ -51,7 +57,9 @@ function Navigation() {
         </div>
       </div>
     </nav>
-    <CategoryPanel/>
+    
+    <CategoryPanel  isOpenCatPanel={isOpenCatPanel}
+    setIsOpenCatPanel={setIsOpenCatPanel}/>
     </>
 
  
