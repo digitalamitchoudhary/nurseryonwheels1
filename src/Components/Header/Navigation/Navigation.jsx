@@ -5,6 +5,7 @@ import { LiaAngleDownSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 import { GoRocket } from "react-icons/go";
 import CategoryPanel from './CategoryPanel';
+import '../Navigation/styles.css';
 
 
 function Navigation() {
@@ -25,13 +26,75 @@ function Navigation() {
           </Button>
         </div>
         <div className="col_2  w-[60%]">
-          <ul className="flex items-center gap-5">
-            <li className="list-none">
+          <ul className="flex items-center gap-5 nav">
+            <li className="list-none ">
               <Link to="/" className="link transitions text-[14px] font-[500] "> Home </Link>
             </li>
-            <li className="list-none">
+            <li className="list-none relative">
               <Link to="/" className="link transitions text-[14px] font-[500] "> Fashion </Link>
-            </li><li className="list-none">
+
+                <div className="submenu absolute top-[120%] left-[0%] min-w-[200px] bg-white shadow-md opacity-0 ">
+                  <ul>
+
+                  <li className="list-none w-full relative ">
+                    <Link to="/" className="w-full">
+                    <Button className="!text-[rgba(0,0,0,0.8)]  !rounded-none !text-left w-full !justify-start ">Men</Button>
+                    <div className="submenu absolute top-[0%] left-[100%] min-w-[200px] bg-white shadow-md opacity-0 ">
+                  <ul>
+
+                  <li className="list-none w-full ">
+                    <Link to="/" className="w-full">
+                    <Button className="!text-[rgba(0,0,0,0.8)]  !rounded-none !text-left w-full !justify-start ">Men</Button>
+                    
+                    </Link>
+                    </li>
+                
+                  <li className="list-none">
+                  <Link to="/" className="w-full">
+                    <Button className="!text-[rgba(0,0,0,0.8)]  !rounded-none !text-left w-full !justify-start ">Women</Button>
+                    </Link>
+
+                  </li>
+                  <li className="list-none">
+                  <Link to="/" className="w-full">
+                    <Button className="!text-[rgba(0,0,0,0.8)]  !rounded-none !text-left w-full !justify-start ">girls</Button>
+                    </Link>
+
+                  </li>
+                  <li className="list-none">
+                  <Link to="/" className="w-full">
+                    <Button className="!text-[rgba(0,0,0,0.8)]  !rounded-none !text-left w-full !justify-start ">boys</Button>
+                    </Link>
+
+                  </li>
+                  </ul>
+                </div>
+                    </Link>
+                    </li>
+                
+                  <li className="list-none">
+                  <Link to="/" className="w-full">
+                    <Button className="!text-[rgba(0,0,0,0.8)]  !rounded-none !text-left w-full !justify-start ">Women</Button>
+                    </Link>
+
+                  </li>
+                  <li className="list-none">
+                  <Link to="/" className="w-full">
+                    <Button className="!text-[rgba(0,0,0,0.8)]  !rounded-none !text-left w-full !justify-start ">girls</Button>
+                    </Link>
+
+                  </li>
+                  <li className="list-none">
+                  <Link to="/" className="w-full">
+                    <Button className="!text-[rgba(0,0,0,0.8)]  !rounded-none !text-left w-full !justify-start ">boys</Button>
+                    </Link>
+
+                  </li>
+                  </ul>
+                </div>
+              
+            </li>
+            <li className="list-none">
               <Link to="/" className="link transitions text-[14px] font-[500] "> Electroinc </Link>
             </li><li className="list-none">
               <Link to="/" className="link transitions text-[14px] font-[500] "> Bags </Link>
