@@ -13,6 +13,7 @@ body{
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     background: #f5f0f0;
+    overflow-x: hidden;
 }
 
 
@@ -30,3 +31,4 @@ body{
 .MuiBadge-badge{
     background-color: #ff5252 !important;
 }
+
