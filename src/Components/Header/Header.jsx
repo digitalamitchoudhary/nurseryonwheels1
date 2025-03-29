@@ -28,7 +28,7 @@ function Header() {
           <div className="flex items-center  justify-between ">
             <div className="col1 w-[50%]">
               <p className="text-[12px] font-[500]">
-                {' '}
+                
                 Get up to 50% off new season styles, limited time only{' '}
               </p>
             </div>
