@@ -6,15 +6,19 @@ import '../HomeSlider/HomeSlider.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 // import required modules
-import { Navigation } from 'swiper/modules';
+import {Autoplay, Navigation } from 'swiper/modules';
 function HomeSlider() {
   return (
     <div className='homeSlider !py-4'>
       <div className="container">
       <Swiper 
-       spaceBetween={10}
+       spaceBetween={80}
        loop={true}
-       navigation={true} modules={[Navigation]} className="sliderHome">
+      //  autoplay={{
+      //   delay: 2000,
+      //   disableOnInteraction: false,
+      // }}
+       navigation={true} modules={[ Autoplay,Navigation]} className="sliderHome">
         <SwiperSlide>
           <div className="item rounded-[20px] overflow-hidden ">
           <img
