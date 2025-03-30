@@ -9,6 +9,10 @@
     list-style: none;
   }
 
+
+::-webkit-scrollbar{width: 10px !important; height: 8px !important;}
+::-webkit-scrollbar-thumb{background:#ff5252;}
+::-webkit-scrollbar-track{background:#fff;}
 body{
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
