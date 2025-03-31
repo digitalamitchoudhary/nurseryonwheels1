@@ -1,0 +1,27 @@
+.adsSlides .swiper-button-prev,
+.adsSlides .swiper-button-next {
+  width: 30px; 
+  height: 30px; 
+  min-width: 30px; 
+  top: 55% !important;
+}
+
+.adsSlides .swiper-button-prev:after,
+.adsSlides .swiper-button-next:after {
+  font-size: 18px !important;
+}
+
+
+.adsSlides .swiper-button-next:hover,
+.adsSlides .swiper-button-prev:hover {
+  background: #ff5252 !important;
+}
+
+.adsSlides .swiper-button-next:hover::after,
+.adsSlides .swiper-button-prev:hover::after {
+  color: #fff !important;
+}
+
+.adsSlides .item {
+  border: 10px solid rgba(0, 0, 0, 0.1);
+}

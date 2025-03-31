@@ -10,10 +10,10 @@ import {Navigation } from 'swiper/modules';
 function HomeCatSlider() {
   return (
     <>
-        <div className='homeCatSlider'>
+        <div className='homeCatSlider !pt-4 !py-8' >
       <div className="container  overflow-hidden !px-4  ">
       <Swiper 
-        slidesPerView={8}
+        slidesPerView={7}
        spaceBetween={20}
        loop={true}
       
