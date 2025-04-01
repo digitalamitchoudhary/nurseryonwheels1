@@ -18,23 +18,14 @@ function AdsBannerSlider(props) {
              loop={true}
             
              navigation={true} modules={[Navigation]} className="adsSlides">
-              <SwiperSlide>
-              <BannerBox Link={'/s'} img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'}/>
-              </SwiperSlide>
-              <SwiperSlide>
-              <BannerBox Link={'/ss'} img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'}/>
-              </SwiperSlide>
-              <SwiperSlide>
-              <BannerBox Link={'/ss'} img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'}/>
-              </SwiperSlide>
-              <SwiperSlide>
+               <SwiperSlide>
               <BannerBox Link={'/ss'} img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'}/>
               </SwiperSlide> <SwiperSlide>
-              <BannerBox Link={'/ss'} img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'}/>
+              <BannerBox Link={'/ss'} img={'https://serviceapi.spicezgold.com/download/1741669037986_banner2.webp'}/>
               </SwiperSlide> <SwiperSlide>
-              <BannerBox Link={'/ss'} img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'}/>
+              <BannerBox Link={'/ss'} img={'https://serviceapi.spicezgold.com/download/1741669057847_banner5.webp'}/>
               </SwiperSlide> <SwiperSlide>
-              <BannerBox Link={'/ss'} img={'https://serviceapi.spicezgold.com/download/1741669012402_banner1.webp'}/>
+              <BannerBox Link={'/ss'} img={'https://serviceapi.spicezgold.com/download/1742453755529_1741669087880_banner6.webp'}/>
               </SwiperSlide>
               </Swiper>
     </div>
