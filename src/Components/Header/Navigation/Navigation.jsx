@@ -115,6 +115,44 @@ function Navigation() {
                       </Button>
                       
                     </Link>
+                    <ul className="submenu absolute !top-[0%]  !left-[105%] min-w-[150px] bg-white shadow-md opacity-0 ">
+                        <li className="list-none w-full ">
+                          <Link to="/" className="w-full">
+                            <Button className="  !rounded-none !text-left w-full !justify-start ">
+                              T-Shirt
+                            </Button>
+                          </Link>
+                        </li>
+
+                        <li className="list-none">
+                          <Link to="/" className="w-full">
+                            <Button className="   !rounded-none !text-left w-full !justify-start ">
+                              Shirt
+                            </Button>
+                          </Link>
+                        </li>
+                        <li className="list-none">
+                          <Link to="/" className="w-full">
+                            <Button className="   !rounded-none !text-left w-full !justify-start ">
+                              Footwear
+                            </Button>
+                          </Link>
+                        </li>
+                        <li className="list-none">
+                          <Link to="/" className="w-full">
+                            <Button className="   !rounded-none !text-left w-full !justify-start ">
+                              Watch
+                            </Button>
+                          </Link>
+                        </li>
+                        <li className="list-none">
+                          <Link to="/" className="w-full">
+                            <Button className="   !rounded-none !text-left w-full !justify-start ">
+                              Pents
+                            </Button>
+                          </Link>
+                        </li>
+                      </ul>
                   </li>
                   <li className="list-none">
                     <Link to="/" className="w-full">

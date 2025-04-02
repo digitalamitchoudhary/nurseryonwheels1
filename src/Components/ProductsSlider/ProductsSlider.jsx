@@ -23,6 +23,56 @@ function ProductsSlider(props) {
                  </div>
                  
                </SwiperSlide>
+               <SwiperSlide>
+                 <div className="item !py-7 !px-3 overflow-hidden bg-white rounded-sm text-center flex items-center justify-center flex-col ">
+                   <img src="https://serviceapi.spicezgold.com/download/1741660962379_fash.png" alt="" className="w-[60px]"/>
+                   <h3 className='!text-[15px] font-[500] !mt-3'>Smart Tablet</h3>
+                 </div>
+                 
+               </SwiperSlide>    <SwiperSlide>
+                 <div className="item !py-7 !px-3 overflow-hidden bg-white rounded-sm text-center flex items-center justify-center flex-col ">
+                   <img src="https://serviceapi.spicezgold.com/download/1741660962379_fash.png" alt="" className="w-[60px]"/>
+                   <h3 className='!text-[15px] font-[500] !mt-3'>Smart Tablet</h3>
+                 </div>
+                 
+               </SwiperSlide>    <SwiperSlide>
+                 <div className="item !py-7 !px-3 overflow-hidden bg-white rounded-sm text-center flex items-center justify-center flex-col ">
+                   <img src="https://serviceapi.spicezgold.com/download/1741660962379_fash.png" alt="" className="w-[60px]"/>
+                   <h3 className='!text-[15px] font-[500] !mt-3'>Smart Tablet</h3>
+                 </div>
+                 
+               </SwiperSlide>
+               <SwiperSlide>
+                 <div className="item !py-7 !px-3 overflow-hidden bg-white rounded-sm text-center flex items-center justify-center flex-col ">
+                   <img src="https://serviceapi.spicezgold.com/download/1741660962379_fash.png" alt="" className="w-[60px]"/>
+                   <h3 className='!text-[15px] font-[500] !mt-3'>Smart Tablet</h3>
+                 </div>
+                 
+               </SwiperSlide><SwiperSlide>
+                 <div className="item !py-7 !px-3 overflow-hidden bg-white rounded-sm text-center flex items-center justify-center flex-col ">
+                   <img src="https://serviceapi.spicezgold.com/download/1741660962379_fash.png" alt="" className="w-[60px]"/>
+                   <h3 className='!text-[15px] font-[500] !mt-3'>Smart Tablet</h3>
+                 </div>
+                 
+               </SwiperSlide><SwiperSlide>
+                 <div className="item !py-7 !px-3 overflow-hidden bg-white rounded-sm text-center flex items-center justify-center flex-col ">
+                   <img src="https://serviceapi.spicezgold.com/download/1741660962379_fash.png" alt="" className="w-[60px]"/>
+                   <h3 className='!text-[15px] font-[500] !mt-3'>Smart Tablet</h3>
+                 </div>
+                 
+               </SwiperSlide><SwiperSlide>
+                 <div className="item !py-7 !px-3 overflow-hidden bg-white rounded-sm text-center flex items-center justify-center flex-col ">
+                   <img src="https://serviceapi.spicezgold.com/download/1741660962379_fash.png" alt="" className="w-[60px]"/>
+                   <h3 className='!text-[15px] font-[500] !mt-3'>Smart Tablet</h3>
+                 </div>
+                 
+               </SwiperSlide><SwiperSlide>
+                 <div className="item !py-7 !px-3 overflow-hidden bg-white rounded-sm text-center flex items-center justify-center flex-col ">
+                   <img src="https://serviceapi.spicezgold.com/download/1741660962379_fash.png" alt="" className="w-[60px]"/>
+                   <h3 className='!text-[15px] font-[500] !mt-3'>Smart Tablet</h3>
+                 </div>
+                 
+               </SwiperSlide>
                </Swiper>
     </div>
   )

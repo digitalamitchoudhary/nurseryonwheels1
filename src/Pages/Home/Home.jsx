@@ -25,7 +25,7 @@ function Home() {
 
 
       <section className='bg-white !py-8'>
-        <div className="container">
+        <div className="container overflow-hidden">
           <div className="flex items-center justify-between">
             <div className="left-section">
               <h2 className='text-[20px] font-[600]'>Popular Products</h2>
@@ -67,7 +67,7 @@ function Home() {
               </Box>
             </div>
           </div>
-          <ProductsSlider items={5}/>
+          <ProductsSlider items={8}/>
         </div>
       </section>
 
