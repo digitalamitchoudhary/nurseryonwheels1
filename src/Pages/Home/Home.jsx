@@ -20,7 +20,7 @@ function Home() {
 
   return (
     <>
-      <HomeSlider />
+      <HomeSlider/>
       <HomeCatSlider />
 
 
@@ -67,7 +67,7 @@ function Home() {
               </Box>
             </div>
           </div>
-          <ProductsSlider items={8}/>
+          <ProductsSlider items={6}/>
         </div>
       </section>
 

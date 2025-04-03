@@ -62,7 +62,7 @@ function Header() {
         <div className="container flex items-center justify-between">
           <div className="col1 w-[25%]">
 
-            <Link to={"/"}> <img src="./logo.jpg" alt="" /></Link>
+            <Link to={"/"}> <img className= " !w-[250px] !object-cover " src="./logo.png" alt="" /></Link>
 
           </div>
           <div className="col2 w-[45%]">

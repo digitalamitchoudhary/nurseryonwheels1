@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 import {Autoplay, Navigation } from 'swiper/modules';
 function HomeSlider() {
   return (
-    <div className='homeSlider !py-4'>
+    <div className='homeSlider overflow-hidden !py-4'>
       <div className="container">
       <Swiper 
        spaceBetween={80}
@@ -22,7 +22,7 @@ function HomeSlider() {
         <SwiperSlide>
           <div className="item rounded-[20px] overflow-hidden ">
           <img
-            src="https://api.spicezgold.com/download/file_1734524930884_NewProject(6).jpg"
+            src="./banner/1.svg"
             alt="Banner Slide"
             className="w-full"
           /></div>
@@ -31,7 +31,7 @@ function HomeSlider() {
         <div className="item rounded-[20px] overflow-hidden ">
 
           <img
-            src="https://api.spicezgold.com/download/file_1734524971122_NewProject(8).jpg"
+            src="./banner/2.svg"
             alt="Banner Slide"
             className="w-full"
           /></div>
@@ -40,12 +40,12 @@ function HomeSlider() {
         <div className="item rounded-[20px] overflow-hidden ">
 
           <img
-            src="https://api.spicezgold.com/download/file_1734525002307_1723967638078_slideBanner1.6bbeed1a0c8ffb494f7c.jpg"
+            src="./banner/3.svg"
             alt="Banner Slide"
             className="w-full"
           /></div>
         </SwiperSlide> 
-        <SwiperSlide>
+        {/* <SwiperSlide>
         <div className="item rounded-[20px] overflow-hidden ">
 
           <img
@@ -71,7 +71,7 @@ function HomeSlider() {
             alt="Banner Slide"
             className="w-full"
           /></div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
     </div>
