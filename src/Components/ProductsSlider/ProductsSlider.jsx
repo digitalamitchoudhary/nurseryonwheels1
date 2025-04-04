@@ -11,10 +11,10 @@ import ProductItem from '../ProductItem/ProductItem';
 function ProductsSlider(props) {
   return (<>
   
-  <div className="productsSlider !py-15 overflow-hidden ">
+  <div className="productsSlider   rounded-md !mt-3.5 overflow-hidden ">
        <Swiper 
                slidesPerView={props.items}
-              spaceBetween={15}
+              spaceBetween={10}
               loop={true}
               
               navigation={true} modules={[Navigation]} className="ySwiper">

@@ -67,7 +67,7 @@ function Home() {
               </Box>
             </div>
           </div>
-          <ProductsSlider items={6}/>
+          <ProductsSlider items={5}/>
         </div>
       </section>
 

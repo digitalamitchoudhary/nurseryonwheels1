@@ -1,0 +1,7 @@
+.productItem .title{line-height: 22px;}
+.productItem{border-inline-end: 1px solid #e5e5e5;
+    margin-inline-end: -2px;
+ }
+
+.imgWrapper img{ display: flex;
+margin: auto;}
