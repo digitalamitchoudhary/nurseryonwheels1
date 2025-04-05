@@ -5,3 +5,5 @@
 
 .imgWrapper img{ display: flex;
 margin: auto;}
+
+.productItem .actions button svg{pointer-events: none !important;}
