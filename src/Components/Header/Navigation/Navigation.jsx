@@ -17,7 +17,7 @@ function Navigation() {
   return (
     <>
       <nav className="!py-2">
-        <div className="container flex items-center justify-end gap-8  ">
+        <div className="container flex items-center justify-end gap-8 ">
           <div className="col_1  w-[20%]">
             <Button
               className="!text-black w-full gap-2 "
@@ -72,14 +72,14 @@ function Navigation() {
                         </li>
                         <li className="list-none">
                           <Link to="/" className="w-full">
-                            <Button className="   !rounded-none !text-left w-full !justify-start ">
+                            <Button className=" !rounded-none !text-left w-full !justify-start ">
                               Footwear
                             </Button>
                           </Link>
                         </li>
                         <li className="list-none">
                           <Link to="/" className="w-full">
-                            <Button className="   !rounded-none !text-left w-full !justify-start ">
+                            <Button className=" !rounded-none !text-left w-full !justify-start ">
                               Watch
                             </Button>
                           </Link>
@@ -147,7 +147,7 @@ function Navigation() {
                         </li>
                         <li className="list-none">
                           <Link to="/" className="w-full">
-                            <Button className="   !rounded-none !text-left w-full !justify-start ">
+                            <Button className=" !rounded-none !text-left w-full !justify-start ">
                               Pents
                             </Button>
                           </Link>
@@ -219,7 +219,7 @@ function Navigation() {
                         </li>
                         <li className="list-none">
                           <Link to="/" className="w-full">
-                            <Button className="   !rounded-none !text-left w-full !justify-start ">
+                            <Button className=" !rounded-none !text-left w-full !justify-start ">
                               Pents
                             </Button>
                           </Link>
@@ -236,14 +236,14 @@ function Navigation() {
                   </li>
                   <li className="list-none">
                     <Link to="/" className="w-full">
-                      <Button className="   !rounded-none !text-left w-full !justify-start ">
+                      <Button className=" !rounded-none !text-left w-full !justify-start ">
                         girls
                       </Button>
                     </Link>
                   </li>
                   <li className="list-none">
                     <Link to="/" className="w-full">
-                      <Button className="   !rounded-none !text-left w-full !justify-start ">
+                      <Button className=" !rounded-none !text-left w-full !justify-start ">
                         Kids
                       </Button>
                       
@@ -251,7 +251,7 @@ function Navigation() {
                   </li>
                   <li className="list-none">
                     <Link to="/" className="w-full">
-                      <Button className="   !rounded-none !text-left w-full !justify-start ">
+                      <Button className="!rounded-none !text-left w-full !justify-start ">
                         boys
                       </Button>
                     </Link>

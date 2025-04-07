@@ -10,8 +10,16 @@ import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import ProductsSlider from '../../Components/ProductsSlider/ProductsSlider';
 
-function Home() {
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+// import required modules
+import { Navigation } from 'swiper/modules';
+import Blogitem from '../../Components/Blogitem/Blogitem';
 
+function Home() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -20,27 +28,25 @@ function Home() {
 
   return (
     <>
-      <HomeSlider/>
+      <HomeSlider />
       <HomeCatSlider />
 
-
-      <section className='bg-white !py-8'>
+      <section className="bg-white !py-8">
         <div className="container overflow-hidden">
           <div className="flex items-center justify-between">
             <div className="left-section">
-              <h2 className='text-[20px] font-[600]'>Popular Products</h2>
-              <p className='text-[14px] font-[400]'>Do not miss the current offers until the end of March.</p>
+              <h2 className="text-[20px] font-[600]">Popular Products</h2>
+              <p className="text-[14px] font-[400]">
+                Do not miss the current offers until the end of March.
+              </p>
             </div>
             <div className="right-section">
-
-
               <Box
                 sx={{
                   flexGrow: 1,
                   maxWidth: { xs: 320, sm: 780 },
                   bgcolor: 'background.paper',
                 }}
-
               >
                 <Tabs
                   value={value}
@@ -67,14 +73,13 @@ function Home() {
               </Box>
             </div>
           </div>
-          <ProductsSlider items={5}/>
+          <ProductsSlider items={5} />
         </div>
       </section>
 
-
       {/* ********************************************  Free Delivery Now Section start *************************************   */}
 
-      <section className="!py-16  bg-white">
+      <section className="!py-16 bg-white">
         <div className="container">
           <div className="freeShiping  w-[85%] !m-auto !py-4 !p-4 border-2 border-[red] flex items-center justify-between rounded-md !mb-7">
             <div className="col1 flex items-center gap-4">
@@ -92,12 +97,39 @@ function Home() {
           </div>
           <AdsBannerSlider items={4} />
         </div>
-
       </section>
       {/* ********************************************  Free Delivery Now Section End *************************************   */}
 
+      <section className="!py-5 !pt-0 !pb-8 bg-white">
 
-
+        <div className="container">
+        <h2 className="text-[20px] font-[600] !mb-4">Popular Products</h2>
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={10}
+            navigation={true}
+            loop={true}
+            modules={[Navigation]}
+            className="blogSlider"
+          >
+            <SwiperSlide>
+              <Blogitem/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Blogitem/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Blogitem/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Blogitem/>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Blogitem/>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
       <br />
       <br />
       <br />
