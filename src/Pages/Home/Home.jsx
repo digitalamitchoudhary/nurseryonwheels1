@@ -103,7 +103,7 @@ function Home() {
       <section className="!py-5 !pt-0 !pb-8 bg-white">
 
         <div className="container">
-        <h2 className="text-[20px] font-[600] !mb-4">Popular Products</h2>
+        <h2 className="text-[20px] font-[600] !mb-4">From The Blog</h2>
           <Swiper
             slidesPerView={4}
             spaceBetween={10}
@@ -130,11 +130,11 @@ function Home() {
           </Swiper>
         </div>
       </section>
+      {/* <br />
       <br />
       <br />
       <br />
-      <br />
-      <br />
+      <br /> */}
     </>
   );
 }
