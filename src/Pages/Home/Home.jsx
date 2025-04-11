@@ -31,7 +31,7 @@ function Home() {
       <HomeSlider />
       <HomeCatSlider />
 
-      <section className="bg-white !py-8">
+      <section className="bg-white  !py-8">
         <div className="container overflow-hidden">
           <div className="flex items-center justify-between">
             <div className="left-section">
@@ -94,11 +94,40 @@ function Home() {
               </p>
             </div>
             <p className="font-bold text-[25px]">- Only ₹ 200*</p>
+                  
           </div>
+          <AdsBannerSlider items={4} />
+        <section className="bg-white !py-8">
+        <div className=" overflow-hidden">
+          <div className="flex items-center justify-between">
+            <div className="left-section">
+              <h2 className="text-[20px] font-[600]">Latest  Products</h2>
+               </div>
+            
+          </div>
+          <ProductsSlider items={5} />
+        </div>
+      </section> 
+      <section className="bg-white !py-8">
+        <div className=" overflow-hidden">
+          <div className="flex items-center justify-between">
+            <div className="left-section">
+              <h2 className="text-[20px] font-[600]">Featured Products</h2>
+               </div>
+            
+          </div>
+          <ProductsSlider items={5} />
+        </div>
+      </section>
+          
+     
+
           <AdsBannerSlider items={4} />
         </div>
       </section>
       {/* ********************************************  Free Delivery Now Section End *************************************   */}
+
+
 
       <section className="!py-5 !pt-0 !pb-8 bg-white">
 

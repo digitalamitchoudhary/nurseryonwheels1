@@ -12,10 +12,10 @@ import Tooltip from '@mui/material/Tooltip';
 function ProductItem() {
   return (
     <div className="productItem ">
-      <div className="group imgWrapper  rounded-md  w-[100%] overflow-hidden relative">
+      <div className="group imgWrapper  rounded-md  w-[100%]   overflow-hidden relative">
         <Link>
-        <div  className=" overflow-hidden !h-[250px]" >
-        <img
+        <div  className=" overflow-hidden     !mr- 1 !h-[250px]" >
+        <img  
           src="https://api.spicezgold.com/download/file_1734529297929_fiorra-women-s-teapot-blue-pure-cotton-a-line-kurta-with-sharara-and-dupatta-product-images-rvo9n8udfg-0-202307260626.jpg"
           alt=""  className=" object-cover transition-all duration-700"
         />
@@ -27,7 +27,9 @@ function ProductItem() {
         />
         
        
-        </div></Link>
+        </div>
+        
+        </Link>
         <span className="discount flex items-center absolute top-[10px] rounded-sm left-[10px] z-50 bg-[#ff5252] text-white text-[12px] font-[500] !p-1">10%</span>
  
     

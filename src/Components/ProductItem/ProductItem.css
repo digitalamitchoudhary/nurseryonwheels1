@@ -1,9 +1,21 @@
-.productItem .title{line-height: 22px;}
-.productItem{border-inline-end: 1px solid #e5e5e5;
-    margin-inline-end: -2px;
- }
-
-.imgWrapper img{ display: flex;
-margin: auto;}
-
-.productItem .actions button svg{pointer-events: none !important;}
+.productItem {
+    border-inline-end: 1px solid #e5e5e5;
+    /* padding-inline-end: -2px; */
+    border-radius: 0px 5px !important;
+    overflow: hidden;
+    /* background: #fff; */
+  }
+  
+  .productItem .title {
+    line-height: 22px;
+  }
+  
+  .imgWrapper img {
+    display: block;
+    margin: auto;
+  }
+  
+  .productItem .actions button svg {
+    pointer-events: none !important;
+  }
+  
