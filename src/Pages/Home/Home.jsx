@@ -18,6 +18,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Navigation } from 'swiper/modules';
 import Blogitem from '../../Components/Blogitem/Blogitem';
+import HomeBanner from '../../Components/HomeBanner/HomeBanner';
 
 function Home() {
   const [value, setValue] = React.useState(0);
@@ -30,6 +31,13 @@ function Home() {
     <>
       <HomeSlider />
       <HomeCatSlider />
+
+      <section className='!py-6'>
+      <div className="container flex items-center">
+       <div className="part1 w-[75%]">
+        <HomeBanner/></div>
+      </div>
+      </section>
 
       <section className="bg-white  !py-8">
         <div className="container overflow-hidden">
