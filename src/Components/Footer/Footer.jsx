@@ -61,7 +61,7 @@ function Footer() {
         <div className="footer flex   !pt-8 ">
           <div className="part1 w-[25%] border-r-1 border-[#808080] !pt-4 flex flex-col gap-3.5 ">
             <h2 className="text-[18px]  font-[600]">Contact us</h2>
-            <p div className=" text-[14px] w-[70%] font-[400] ">
+            <p className=" text-[14px] w-[70%] font-[400] ">
               Classyshop - Mega Super Store 507-Union Trade Centre France
             </p>
             <Link className="link" to="mailto">
@@ -76,7 +76,7 @@ function Footer() {
                 Online Chat Get Expert Help
               </p>
             </span>
-          </div>
+          </div>  
           <div className="part2 w-[20%]  !p-4 !pl-10 flex flex-col gap-3.5 ">
             <h2 className="text-[18px]  font-[600]">Products</h2>
             <ul className="flex flex-col text-[#424242] gap-1">

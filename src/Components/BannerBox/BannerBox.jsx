@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function BannerBox(props) {
+function BannerBox( props) {
   return (
     <>
         <div className="box bannerBox overflow-hidden rounded-lg group">

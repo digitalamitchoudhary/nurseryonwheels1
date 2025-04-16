@@ -19,6 +19,7 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import Blogitem from '../../Components/Blogitem/Blogitem';
 import HomeBanner from '../../Components/HomeBanner/HomeBanner';
+import BannerBoxV2 from '../../Components/BannerBoxV2/BannerBoxV2';
 
 function Home() {
   const [value, setValue] = React.useState(0);
@@ -33,57 +34,62 @@ function Home() {
       <HomeCatSlider />
 
       <section className='!py-6'>
-      <div className="container flex items-center">
-       <div className="part1 w-[75%]">
-        <HomeBanner/></div>
-      </div>
-      </section>
+      <div className="container flex  gap-5">
+       <div className="part1 w-[70%]">
+        <HomeBanner/>
+         </div> 
+          <div className="part2 flex items-center flex-col gap-5 justify-between w-[30%]">
+          <BannerBoxV2 img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-1.jpg'} Link={"/"} info={"left"}/>
+          <BannerBoxV2 img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-2.jpg'} Link={"/"} info={"right"}/>
+         </div>
+        </div>
+        </section>
 
-      <section className="bg-white  !py-8">
-        <div className="container overflow-hidden">
-          <div className="flex items-center justify-between">
-            <div className="left-section">
-              <h2 className="text-[20px] font-[600]">Popular Products</h2>
-              <p className="text-[14px] font-[400]">
-                Do not miss the current offers until the end of March.
-              </p>
-            </div>
-            <div className="right-section">
-              <Box
-                sx={{
-                  flexGrow: 1,
-                  maxWidth: { xs: 320, sm: 780 },
-                  bgcolor: 'background.paper',
-                }}
-              >
-                <Tabs
-                  value={value}
-                  onChange={handleChange}
-                  variant="scrollable"
-                  scrollButtons
-                  aria-label="visible arrows tabs example"
+        <section className="bg-white  !py-8">
+          <div className="container overflow-hidden">
+            <div className="flex items-center justify-between">
+              <div className="left-section">
+                <h2 className="text-[20px] font-[600]">Popular Products</h2>
+                <p className="text-[14px] font-[400]">
+                  Do not miss the current offers until the end of March.
+                </p>
+              </div>
+              <div className="right-section">
+                <Box
                   sx={{
-                    [`& .${tabsClasses.scrollButtons}`]: {
-                      '&.Mui-disabled': { opacity: 0.3 },
-                    },
+                    flexGrow: 1,
+                    maxWidth: { xs: 320, sm: 780 },
+                    bgcolor: 'background.paper',
                   }}
                 >
-                  <Tab label="Home" />
-                  <Tab label="Fashion" />
-                  <Tab label="Electronic" />
-                  <Tab label="Bags" />
-                  <Tab label="Footwear" />
-                  <Tab label="Groceries" />
-                  <Tab label="Beauty" />
-                  <Tab label="Wellness" />
-                  <Tab label="Jewellery" />
-                </Tabs>
-              </Box>
+                  <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    variant="scrollable"
+                    scrollButtons
+                    aria-label="visible arrows tabs example"
+                    sx={{
+                      [`& .${tabsClasses.scrollButtons}`]: {
+                        '&.Mui-disabled': { opacity: 0.3 },
+                      },
+                    }}
+                  >
+                    <Tab label="Home" />
+                    <Tab label="Fashion" />
+                    <Tab label="Electronic" />
+                    <Tab label="Bags" />
+                    <Tab label="Footwear" />
+                    <Tab label="Groceries" />
+                    <Tab label="Beauty" />
+                    <Tab label="Wellness" />
+                    <Tab label="Jewellery" />
+                  </Tabs>
+                </Box>
+              </div>
             </div>
+            <ProductsSlider items={5} />
           </div>
-          <ProductsSlider items={5} />
-        </div>
-      </section>
+        </section>
 
       {/* ********************************************  Free Delivery Now Section start *************************************   */}
 
@@ -167,11 +173,7 @@ function Home() {
           </Swiper>
         </div>
       </section>
-      {/* <br />
-      <br />
-      <br />
-      <br />
-      <br /> */}
+     
     </>
   );
 }

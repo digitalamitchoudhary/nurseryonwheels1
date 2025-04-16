@@ -15,7 +15,7 @@ function AdsBannerSlider(props) {
        <Swiper 
               slidesPerView={props.items}
              spaceBetween={10}
-             loop={true}
+            //  loop={true}
             
              navigation={true} modules={[Navigation]} className="adsSlides">
                <SwiperSlide>
