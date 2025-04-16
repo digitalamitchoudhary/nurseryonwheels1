@@ -1,0 +1,30 @@
+.swiper-pagination-bullet-active{background:#ff5252 !important ;}
+
+.HomeSlider .swiper-slide-active .info,
+.HomeSlider .swiper-slide-active .info h2,
+.HomeSlider .swiper-slide-active .info h3,
+.HomeSlider .swiper-slide-active .info h4,
+.HomeSlider .swiper-slide-active .info .btn_ {
+    right: 0 !important;
+    bottom: 0 !important;
+    opacity: 1;
+}
+
+.HomeSlider .swiper-slide-active .info h2 {
+    transition-duration: 2s;
+}
+
+.HomeSlider .swiper-slide-active .info h3 {
+    transition-duration: 1.9s;
+}
+
+.HomeSlider .swiper-slide-active .info h4 {
+    transition-duration: 1.5s;
+}
+
+.HomeSlider .swiper-slide-active .info .btn_ {
+    transition-duration: 2.1s;
+}
+
+
+   
