@@ -7,7 +7,7 @@ function BannerBoxV2(props) {
         <>
        <div className="bannerBoxV2 w-full h-[210px] overflow-hidden rounded-md group relative">
             <Link to={props.Link} >
-                  <img src={props.img} alt="banner" className="!transition-all group-hover:scale-105 duration-150 group-hover:rotate-1 w-full"/>
+                  <img src={props.img} alt="banner" className="!transition-all group-hover:scale-105 duration-150 group-hover:rotate-1 w-full  "/>
                   </Link>
 
                 <div className={`info absolute !p-5 flex flex-col items-center justify-center top-0 ${props.info==="left"? 'left-0' : 'right-0  !pl-15' } w-[70%] h-[100%] gap-2 z-50`}>

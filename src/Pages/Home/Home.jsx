@@ -34,62 +34,62 @@ function Home() {
       <HomeCatSlider />
 
       <section className='!py-6'>
-      <div className="container flex  gap-5">
-       <div className="part1 w-[70%]">
-        <HomeBanner/>
-         </div> 
-          <div className="part2 flex items-center flex-col gap-5 justify-between w-[30%]">
-          <BannerBoxV2 img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-1.jpg'} Link={"/"} info={"left"}/>
-          <BannerBoxV2 img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-2.jpg'} Link={"/"} info={"right"}/>
-         </div>
+      <div className="container flex justify-center items-center overflow-hidden gap-5 min-h-[420px]">
+      <div className="part1 flex flex-col justify-center w-[60%] h-full">
+            <HomeBanner />
+          </div>
+          <div className="part2 flex items-center flex-col gap-2 justify-between h-full w-[30%]">
+            <BannerBoxV2 img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-1.jpg'} Link={"/"} info={"left"} />
+            <BannerBoxV2 img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-2.jpg'} Link={"/"} info={"right"} />
+          </div>
         </div>
-        </section>
+      </section>
 
-        <section className="bg-white  !py-8">
-          <div className="container overflow-hidden">
-            <div className="flex items-center justify-between">
-              <div className="left-section">
-                <h2 className="text-[20px] font-[600]">Popular Products</h2>
-                <p className="text-[14px] font-[400]">
-                  Do not miss the current offers until the end of March.
-                </p>
-              </div>
-              <div className="right-section">
-                <Box
+      <section className="bg-white  !py-8">
+        <div className="container overflow-hidden">
+          <div className="flex items-center justify-between">
+            <div className="left-section">
+              <h2 className="text-[20px] font-[600]">Popular Products</h2>
+              <p className="text-[14px] font-[400]">
+                Do not miss the current offers until the end of March.
+              </p>
+            </div>
+            <div className="right-section">
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  maxWidth: { xs: 320, sm: 780 },
+                  bgcolor: 'background.paper',
+                }}
+              >
+                <Tabs
+                  value={value}
+                  onChange={handleChange}
+                  variant="scrollable"
+                  scrollButtons
+                  aria-label="visible arrows tabs example"
                   sx={{
-                    flexGrow: 1,
-                    maxWidth: { xs: 320, sm: 780 },
-                    bgcolor: 'background.paper',
+                    [`& .${tabsClasses.scrollButtons}`]: {
+                      '&.Mui-disabled': { opacity: 0.3 },
+                    },
                   }}
                 >
-                  <Tabs
-                    value={value}
-                    onChange={handleChange}
-                    variant="scrollable"
-                    scrollButtons
-                    aria-label="visible arrows tabs example"
-                    sx={{
-                      [`& .${tabsClasses.scrollButtons}`]: {
-                        '&.Mui-disabled': { opacity: 0.3 },
-                      },
-                    }}
-                  >
-                    <Tab label="Home" />
-                    <Tab label="Fashion" />
-                    <Tab label="Electronic" />
-                    <Tab label="Bags" />
-                    <Tab label="Footwear" />
-                    <Tab label="Groceries" />
-                    <Tab label="Beauty" />
-                    <Tab label="Wellness" />
-                    <Tab label="Jewellery" />
-                  </Tabs>
-                </Box>
-              </div>
+                  <Tab label="Home" />
+                  <Tab label="Fashion" />
+                  <Tab label="Electronic" />
+                  <Tab label="Bags" />
+                  <Tab label="Footwear" />
+                  <Tab label="Groceries" />
+                  <Tab label="Beauty" />
+                  <Tab label="Wellness" />
+                  <Tab label="Jewellery" />
+                </Tabs>
+              </Box>
             </div>
-            <ProductsSlider items={5} />
           </div>
-        </section>
+          <ProductsSlider items={5} />
+        </div>
+      </section>
 
       {/* ********************************************  Free Delivery Now Section start *************************************   */}
 
@@ -108,33 +108,33 @@ function Home() {
               </p>
             </div>
             <p className="font-bold text-[25px]">- Only ₹ 200*</p>
-                  
+
           </div>
           <AdsBannerSlider items={4} />
-        <section className="bg-white !py-8">
-        <div className=" overflow-hidden">
-          <div className="flex items-center justify-between">
-            <div className="left-section">
-              <h2 className="text-[20px] font-[600]">Latest  Products</h2>
-               </div>
-            
-          </div>
-          <ProductsSlider items={5} />
-        </div>
-      </section> 
-      <section className="bg-white !py-8">
-        <div className=" overflow-hidden">
-          <div className="flex items-center justify-between">
-            <div className="left-section">
-              <h2 className="text-[20px] font-[600]">Featured Products</h2>
-               </div>
-            
-          </div>
-          <ProductsSlider items={5} />
-        </div>
-      </section>
-          
-     
+          <section className="bg-white !py-8">
+            <div className=" overflow-hidden">
+              <div className="flex items-center justify-between">
+                <div className="left-section">
+                  <h2 className="text-[20px] font-[600]">Latest  Products</h2>
+                </div>
+
+              </div>
+              <ProductsSlider items={5} />
+            </div>
+          </section>
+          <section className="bg-white !py-8">
+            <div className=" overflow-hidden">
+              <div className="flex items-center justify-between">
+                <div className="left-section">
+                  <h2 className="text-[20px] font-[600]">Featured Products</h2>
+                </div>
+
+              </div>
+              <ProductsSlider items={5} />
+            </div>
+          </section>
+
+
 
           <AdsBannerSlider items={4} />
         </div>
@@ -146,7 +146,7 @@ function Home() {
       <section className="!py-5 !pt-0 !pb-8 bg-white">
 
         <div className="container">
-        <h2 className="text-[20px] font-[600] !mb-4">From The Blog</h2>
+          <h2 className="text-[20px] font-[600] !mb-4">From The Blog</h2>
           <Swiper
             slidesPerView={4}
             spaceBetween={10}
@@ -156,24 +156,24 @@ function Home() {
             className="blogSlider"
           >
             <SwiperSlide>
-              <Blogitem/>
+              <Blogitem />
             </SwiperSlide>
             <SwiperSlide>
-              <Blogitem/>
+              <Blogitem />
             </SwiperSlide>
             <SwiperSlide>
-              <Blogitem/>
+              <Blogitem />
             </SwiperSlide>
             <SwiperSlide>
-              <Blogitem/>
+              <Blogitem />
             </SwiperSlide>
             <SwiperSlide>
-              <Blogitem/>
+              <Blogitem />
             </SwiperSlide>
           </Swiper>
         </div>
       </section>
-     
+
     </>
   );
 }
