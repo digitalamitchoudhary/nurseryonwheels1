@@ -5,3 +5,13 @@
  .ReactCollapse--collapse {
     transition: height 400ms;
   }
+  
+  .range-slider .range-slider__thumb{
+    width: 14px !important;
+    height: 14px !important; 
+    background-color: #ff5252 !important;
+  }
+  .range-slider{  
+  height: 3px;}
+ .range-slider__range{ background-color: #ff5252 !important;
+  }
