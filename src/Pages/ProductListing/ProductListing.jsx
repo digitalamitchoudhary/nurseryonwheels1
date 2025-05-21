@@ -3,6 +3,8 @@ import Sidebar from '../../Components/Sidebar/Sidebar'
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
+import '../ProductListing/Product.css';
+
 import ProductItem from '../../Components/ProductItem/ProductItem';
 function ProductListing() {
   return (
@@ -35,7 +37,7 @@ function ProductListing() {
         <div className=" rightContent   w-[80%]">
 
 
-        <div className="grid  grid-cols-4 md:grid-cols-4 gap-4">
+        <div className="grid pro  grid-cols-4 md:grid-cols-4 gap-4">
           
         <ProductItem/>
         <ProductItem/>
