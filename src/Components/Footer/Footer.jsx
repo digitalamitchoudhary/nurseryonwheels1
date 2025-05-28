@@ -170,8 +170,14 @@ function Footer() {
               </Link>
             </li>
           </ul>
-          <p className='text-[14px] text-center'>© 2025 -
-          Made with ❤ by Digitalamitchoudhary</p>
+          <p className='text-[14px] text-center'>
+            © 2025 - Made with <span className='text-red-500'>❤</span> by 
+              <a href='http://amitchoudhary.in' className='text-blue-500 font-[500] !ml-1 ' target='_blank' rel='noopener noreferrer'>
+              Digitalamitchoudhary
+            </a>
+          </p>
+
+
           <div className="flex justify-center gap-2">
         <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_blockpaymentlogo/views/img/carte_bleue.png" alt="" />  <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_blockpaymentlogo/views/img/visa.png" alt="" />
         <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_blockpaymentlogo/views/img/master_card.png" alt="" />
