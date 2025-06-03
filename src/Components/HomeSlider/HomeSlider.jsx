@@ -22,7 +22,7 @@ function HomeSlider() {
         <SwiperSlide>
           <div className="item rounded-[20px] overflow-hidden ">
           <img
-            src="./banner/1.svg"
+            src="./banner/1.webp"
             alt="Banner Slide"
             className="w-full"
           /></div>
@@ -31,7 +31,7 @@ function HomeSlider() {
         <div className="item rounded-[20px] overflow-hidden ">
 
           <img
-            src="./banner/2.svg"
+            src="./banner/2.webp  "
             alt="Banner Slide"
             className="w-full"
           /></div>
@@ -40,7 +40,7 @@ function HomeSlider() {
         <div className="item rounded-[20px] overflow-hidden ">
 
           <img
-            src="./banner/3.svg"
+            src="./banner/3.webp"
             alt="Banner Slide"
             className="w-full"
           /></div>
