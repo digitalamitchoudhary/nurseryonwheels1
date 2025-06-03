@@ -53,7 +53,6 @@ function ProductListing() {
               </div>
             </div>
 
-<<<<<<< HEAD
             <div className="grid pro  grid-cols-4 md:grid-cols-4 gap-4">
               <ProductItem />
               <ProductItem />
@@ -65,25 +64,6 @@ function ProductListing() {
               <ProductItem />
             </div>
           </div>
-=======
-        <div className="grid pro  grid-cols-4 md:grid-cols-4 gap-4">
-           
-        <ProductItem/>
-        <ProductItem/>
-        <ProductItem/>
-        <ProductItem/>
-        <ProductItem/>
-        <ProductItem/>
-        <ProductItem/>
-        <ProductItem/>
-
-        </div>
-
-        </div>
-  
-  
-
->>>>>>> fbbed0ff7d6e9ae13804802b59cf10250e1c3f82
         </div>
       </div>
     </div>
