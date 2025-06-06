@@ -113,7 +113,7 @@ function Footer() {
                 placeholder="Your Email Address"
                 className="!pr-4 !mb-4 !pl-4 w-full !h-[45px]  border border-[rgba(131,131,131,0.3)] rounded-sm focus:border-[rgba(0,0,0,0.3)] outline-none"
               />
-              <Button className="btn-org !w-[20px] !mb-4">Subscribe</Button>
+              <Button className="btn-org !mb-4">Subscribe</Button>
 
               <FormControlLabel
                 control={<Checkbox defaultChecked />}

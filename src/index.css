@@ -27,9 +27,9 @@ body{
 
 /* header .top-strip{ border-top: 1px solid rgba(0,0,0,0.1); border-bottom: 1px solid rgba(0,0,0,0.1);} */
 .btn-org{background:#ff5252 !important; color:#fff !important; font-weight: 500; font-size
-    :16px; padding: 7px 60px!important;}
-.bg-org{
-    background:#ff5252;
+    :16px; }
+.btn-org:hover {
+  background: #000 !important;
 }
 .link:hover{
     color: #ff5252;

@@ -1,0 +1,11 @@
+.pro .productItem {
+     border-inline-end: none;
+    
+}
+
+.itemViewActions button.active svg{
+      color: #ff5252 !important;
+      opacity: 1;
+}
+
+.Mui-selected.MuiPaginationItem-page{background-color: #ff5252!important; color: #fff !important;}

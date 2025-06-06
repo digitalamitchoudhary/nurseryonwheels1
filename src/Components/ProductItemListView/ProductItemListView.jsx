@@ -1,20 +1,21 @@
 import React from 'react';
 import { FaRegHeart } from "react-icons/fa";
 import Rating from '@mui/material/Rating';
-import '../ProductItem/ProductItem.css';
+import '../ProductItemListView/ProductItemListView.css';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
+import { FaCartShopping } from "react-icons/fa6";
 
 import { MdZoomOutMap } from "react-icons/md";
 import { IoGitCompareOutline } from "react-icons/io5";
 import Tooltip from '@mui/material/Tooltip';
 
-function ProductItem({ test = '' }) {
+function ProductItemListView() {
   return (
-    <div className={`productItem ${test}`}>
-      <div className="group imgWrapper  rounded-md  w-[100%]   overflow-hidden relative">
+    <div className="shadow-lg rounded-md border-1 !border-[rgba(0,0,0,0.1)] !overflow-hidden flex items-center">
+      <div className="group imgWrapper  rounded-md  w-[25%] !overflow-hidden relative">
         <Link>
-        <div  className=" overflow-hidden     !mr- 1 !h-[250px]" >
+        <div  className=" overflow-hidden  !h-[250px]" >
         <img  
           src="https://api.spicezgold.com/download/file_1734529297929_fiorra-women-s-teapot-blue-pure-cotton-a-line-kurta-with-sharara-and-dupatta-product-images-rvo9n8udfg-0-202307260626.jpg"
           alt=""  className=" object-cover transition-all duration-700"
@@ -96,15 +97,16 @@ function ProductItem({ test = '' }) {
         </div>
 
       </div>
-      <div className="info !p-3 !pb-5">
-        <p className="text-[12px]  transition-all link text-[#5e5c5c] ">
+      <div className="info !p-3 !pb-5 w-[75%] !px-8 !overflow-hidden">
+        <p className="text-[15px]  transition-all link text-[#5e5c5c] ">
 
           <Link to="/"> Catgory</Link>
         </p>
-        <h3 className="text-[14px] link title transition-all !mt-1 !mb-1 font-[500] text-[black] ">
+        <h3 className="text-[18px] link title transition-all !mt-3 !mb-3 font-[500] text-[black] ">
 
           <Link to="/">Apple Smart Watch / Midnight Aluminum </Link>{' '}
         </h3>
+        <p className="text-[14px] !mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione voluptates quidem, minus repudiandae incidunt quod sequi nam sed, consequuntur, reiciendis expedita? Veniam voluptates, deleniti voluptatibus obcaecati tempora facilis ab error.</p>
         <Rating
           name="size-small"
           defaultValue={4.5}
@@ -118,9 +120,12 @@ function ProductItem({ test = '' }) {
           <span className="price text-[#ff5252] text-[15px]">₹530</span>
 
         </div>
+        <div className='!mt-3'>
+          <Button className='btn-org !px-3 flex gap-1' ><FaCartShopping className=' text-[20px] !mr-1' /> Add to Cart</Button></div>
+            
       </div>
     </div>
   );
 }
 
-export default ProductItem;
+export default ProductItemListView;
