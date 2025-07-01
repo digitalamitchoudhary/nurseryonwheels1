@@ -88,7 +88,7 @@ function ProductListing() {
                   aria-haspopup="true"
                   aria-expanded={open ? 'true' : undefined}
                   onClick={handleClick}
-                  className="!bg-white !text-[12px] !text-[#000] !border-1 !border-[#000]  !capitalize"
+                  className="!bg-white !text-[12px] !text-[#000]  !capitalize"
                 >
                   Sales, highest to lowest
                 </Button>
