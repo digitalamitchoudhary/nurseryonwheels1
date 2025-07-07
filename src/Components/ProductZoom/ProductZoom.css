@@ -1,0 +1,50 @@
+.zoomProcductSliderThumbs .swiper-slide{
+    height: auto !important;
+
+}
+
+.zoomProcductSliderThumbs .swiper-button-next{
+    bottom: 0 !important; right: inherit !important;
+    top: inherit !important; width:100% !important; height: 30px !important; border-radius: 0px !important;
+}
+
+.zoomProcductSliderThumbs .swiper-button-prev{
+    top: 0 !important; right: inherit !important;
+    bottom: inherit !important;
+}
+
+.zoomProcductSliderThumbs .swiper-button-next:hover{
+    background-color: #ff5252 !important;
+    color: #eae5e5 !important;}
+.zoomProcductSliderThumbs .swiper-slide{
+    height: auto !important;
+
+}
+
+.zoomProcductSliderThumbs .swiper-button-next{
+    bottom: 0px!important; right: inherit !important;
+    top: inherit !important; width:100% !important; height: 30px !important; border-radius: 0px !important;
+}
+
+.zoomProcductSliderThumbs .swiper-button-prev{
+    top: 20px !important; left: 0px !important;
+    bottom: inherit !important; width:100%!important; height: 30px !important; border-radius: 0px !important;
+}
+
+.zoomProcductSliderThumbs .swiper-button-next:hover{
+    background-color: #ff5252 !important;
+    }
+    .zoomProcductSliderThumbs .swiper-button-prev:hover{
+    background-color: #ff5252 !important;
+    }
+.zoomProcductSliderThumbs .swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+    color: #fff !important; /* white on hover */
+    
+}
+
+.zoomProcductSliderThumbs .swiper-button-prev::after,
+.swiper-button-next::after {
+    
+    transform: rotate(90deg);
+}

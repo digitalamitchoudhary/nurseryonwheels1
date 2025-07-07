@@ -33,7 +33,7 @@ function ProductDetails() {
     </div>
     <section className='bg-white !py-5'>
      <div className="container flex gap-4">
-        <div className="productZoomContainer w-[25%]">
+        <div className="productZoomContainer w-[40%] ">
  
         <ProductZoom/>
 
