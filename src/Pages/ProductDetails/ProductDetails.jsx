@@ -36,7 +36,7 @@ function ProductDetails() {
         <div className="productZoomContainer w-[40%] ">
  
         <ProductZoom/>
-
+/
             
         </div>
     </div></section>
