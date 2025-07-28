@@ -21,7 +21,7 @@ function ProductDetails() {
           <Link
             underline="hover"
             color="inherit"
-            href="/ "
+            href="/"
             className="link transition"
           >
             Fashion
