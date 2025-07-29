@@ -37,13 +37,13 @@
     .zoomProcductSliderThumbs .swiper-button-prev:hover{
     background-color: #ff5252 !important;
     }
-.zoomProcductSliderThumbs .swiper-button-prev:hover::after,
+.zoomProcductSliderThumbs .swiper-button-prev:hover::after, .zoomProcductSliderThumbs
 .swiper-button-next:hover::after {
     color: #fff !important; /* white on hover */
     
 }
 
-.zoomProcductSliderThumbs .swiper-button-prev::after,
+.zoomProcductSliderThumbs .swiper-button-prev::after, .zoomProcductSliderThumbs
 .swiper-button-next::after {
     
     transform: rotate(90deg);

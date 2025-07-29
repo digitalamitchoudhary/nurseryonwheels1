@@ -1,9 +1,14 @@
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import { Link } from "@mui/material";
-import ProductZoom from "../../Components/ProductZoom/ProductZoom";
-import Rating from "@mui/material/Rating";
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import { Link } from '@mui/material';
+import ProductZoom from '../../Components/ProductZoom/ProductZoom';
+import Rating from '@mui/material/Rating';
+import Button from '@mui/material/Button';
+import './ProductDetails.css';
+import { useState } from 'react';
 
 function ProductDetails() {
+  const [productActionIndex, setProductActionIndex] = useState(null);
+
   return (
     <>
       <div className="!py-5">
@@ -47,7 +52,7 @@ function ProductDetails() {
             </h1>
             <div className="flex items-center gap-3 ">
               <span className="text-gray-400  text-[13px]">
-                Brands :{" "}
+                Brands :{' '}
                 <span className="font-[500] text-black opacity-75">
                   House of Chikankari
                 </span>
@@ -61,7 +66,7 @@ function ProductDetails() {
                 readOnly
               />
               <span className="text-[#666] cursor-pointer text-[13px]">
-                Review(5){" "}
+                Review(5){' '}
               </span>
             </div>
 
@@ -73,11 +78,72 @@ function ProductDetails() {
                 ₹530
               </span>
 
-              <span className="text-[14px]  text-gray-500">Available In Stock : <span className="text-green-600 text-[14px] font-[600]">147 Items</span></span>
+              <span className="text-[14px]  text-gray-500">
+                Available In Stock :{' '}
+                <span className="text-green-600 text-[14px] font-[600]">
+                  147 Items
+                </span>
+              </span>
             </div>
 
-            
-            <p className="!mt-3 !pr-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum neque rem id, sint nisi consequatur mollitia, consequuntur tenetur optio exercitationem vero officiis aliquid cupiditate temporibus corrupti fuga consectetur suscipit praesentium! In enim sequi facilis nam quibusdam deleniti eos fugit cum optio, quo consectetur totam officiis ipsa eveniet. Itaque, animi ratione!</p>
+            <p className="!mt-3 !pr-10 !mb-5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+              neque rem id, sint nisi consequatur mollitia, consequuntur tenetur
+              optio exercitationem vero officiis aliquid cupiditate temporibus
+              corrupti fuga consectetur suscipit praesentium! In enim sequi
+              facilis nam quibusdam deleniti eos fugit cum optio, quo
+              consectetur totam officiis ipsa eveniet. Itaque, animi ratione!
+            </p>
+
+            <div className="flex items-center gap-3">
+              <span className="text-[16px]">Size:</span>
+
+              <div className="flex items-center gap-1 actions">
+                <Button
+                  className={`border border-gray-300 rounded-md px-4 py-2 mx-1 ${
+                    productActionIndex === 0
+                      ? '!bg-primary !text-white'
+                      : 'bg-white text-black'
+                  }`}
+                  onClick={() => setProductActionIndex(0)}
+                >
+                  S
+                </Button>
+
+                <Button
+                  className={`border border-gray-300 rounded-md px-4 py-2 mx-1 ${
+                    productActionIndex === 1
+                      ? '!bg-primary !text-white'
+                      : 'bg-white text-black'
+                  }`}
+                  onClick={() => setProductActionIndex(1)}
+                >
+                  M
+                </Button>
+
+                <Button
+                  className={`border border-gray-300 rounded-md px-4 py-2 mx-1 ${
+                    productActionIndex === 2
+                      ? '!bg-primary !text-white'
+                      : 'bg-white text-black'
+                  }`}
+                  onClick={() => setProductActionIndex(2)}
+                >
+                  L
+                </Button>
+
+                <Button
+                  className={`border border-gray-300 rounded-md px-4 py-2 mx-1 ${
+                    productActionIndex === 3
+                      ? '!bg-primary !text-white'
+                      : 'bg-white text-black'
+                  }`}
+                  onClick={() => setProductActionIndex(3)}
+                >
+                  XL
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

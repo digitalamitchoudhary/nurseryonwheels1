@@ -1,7 +1,11 @@
+/* index.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-
+@theme {
+    --color-primary: #ff5252;
+  
+}
 *{
     box-sizing: border-box;
     padding: 0px;
