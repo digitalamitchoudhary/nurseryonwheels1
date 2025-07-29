@@ -18,9 +18,12 @@ body{
     font-optical-sizing: auto;
     background: #f5f0f0;
     overflow-x: hidden !important;
+    color: rgba(36, 36, 36, 1);
     
 
 }
+
+p{font-size: 14px; line-height: 25px;}
 
 
 .container{width: 95%; margin: auto;}
