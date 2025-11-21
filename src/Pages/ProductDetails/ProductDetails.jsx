@@ -5,6 +5,7 @@ import Rating from '@mui/material/Rating';
 import Button from '@mui/material/Button';
 import './ProductDetails.css';
 import { useState } from 'react';
+import QuantityBox from '../../Components/QuantityBox/QuantityBox';
 
 function ProductDetails() {
   const [productActionIndex, setProductActionIndex] = useState(null);
@@ -52,10 +53,7 @@ function ProductDetails() {
             </h1>
             <div className="flex items-center gap-3 ">
               <span className="text-gray-400  text-[13px]">
-                Brands :{' '}
-                <span className="font-[500] text-black opacity-75">
-                  House of Chikankari
-                </span>
+                Brands : <span className="font-[500] text-black opacity-75"> House of Chikankari</span>
               </span>
 
               <Rating
@@ -66,7 +64,7 @@ function ProductDetails() {
                 readOnly
               />
               <span className="text-[#666] cursor-pointer text-[13px]">
-                Review(5){' '}
+                Review(5) 
               </span>
             </div>
 
@@ -94,10 +92,9 @@ function ProductDetails() {
               facilis nam quibusdam deleniti eos fugit cum optio, quo
               consectetur totam officiis ipsa eveniet. Itaque, animi ratione!
             </p>
-
+            {/* size buttons start*/}
             <div className="flex items-center gap-3">
               <span className="text-[16px]">Size:</span>
-
               <div className="flex items-center gap-1 actions">
                 <Button
                   className={`border border-gray-300 rounded-md px-4 py-2 mx-1 ${
@@ -143,7 +140,18 @@ function ProductDetails() {
                   XL
                 </Button>
               </div>
+
+              {/* size buttons end*/}
             </div>
+            <p className="text-[14px] mb-4 text-black">
+              Free Shipping (Est. Delivery Time 2-3 Days)
+            </p>
+
+            {/* qutintity box component start */}
+            <div className="flex items-center ">
+              <div className='qtyboxWrapper !w-[70]'><QuantityBox/></div>
+            </div>
+            {/* quantity box component end */}
           </div>
         </div>
       </section>
