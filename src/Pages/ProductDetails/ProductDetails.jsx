@@ -143,13 +143,15 @@ function ProductDetails() {
 
               {/* size buttons end*/}
             </div>
-            <p className="text-[14px] mb-4 text-black">
+            <p className="text-[14px] !mt-5 !mb-2 text-black">
               Free Shipping (Est. Delivery Time 2-3 Days)
             </p>
 
             {/* qutintity box component start */}
-            <div className="flex items-center ">
-              <div className='qtyboxWrapper !w-[70]'><QuantityBox/></div>
+            <div className="flex items-center gap-4 !mt-4 ">
+              <div className='qtyboxWrapper !w-[70px]'><QuantityBox/></div>
+
+              <Button className=''>Add to Cart</Button>
             </div>
             {/* quantity box component end */}
           </div>
