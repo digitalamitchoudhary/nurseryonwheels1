@@ -4,7 +4,6 @@ import Rating from '@mui/material/Rating';
 import '../ProductItem/ProductItem.css';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
-
 import { MdZoomOutMap } from "react-icons/md";
 import { IoGitCompareOutline } from "react-icons/io5";
 import Tooltip from '@mui/material/Tooltip';

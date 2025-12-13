@@ -6,6 +6,9 @@ import Button from '@mui/material/Button';
 import './ProductDetails.css';
 import { useState } from 'react';
 import QuantityBox from '../../Components/QuantityBox/QuantityBox';
+import { FaCartShopping } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa";
+import { IoIosGitCompare } from "react-icons/io";
 
 function ProductDetails() {
   const [productActionIndex, setProductActionIndex] = useState(null);
@@ -150,10 +153,16 @@ function ProductDetails() {
             {/* qutintity box component start */}
             <div className="flex items-center gap-4 !mt-4 ">
               <div className='qtyboxWrapper !w-[70px]'><QuantityBox/></div>
-
-              <Button className=''>Add to Cart</Button>
+              <Button className='btn-org !px-4 flex !text-[16px] gap-1'> <FaCartShopping className=' text-[20px] !mr-1' /> Add to Cart</Button>
             </div>
             {/* quantity box component end */}
+                
+                {/* Add Wishlist component start */}
+            <div className=' flex items-center gap-9 text-[14px] font-[400]  text-[#131212] !mt-8 cursor-pointer'>
+
+             git 
+            </div>
+             {/* Add Wishlist component end */}
           </div>
         </div>
       </section>
