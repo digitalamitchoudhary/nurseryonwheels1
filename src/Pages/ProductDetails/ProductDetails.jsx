@@ -161,6 +161,8 @@ function ProductDetails() {
             <div className=' flex items-center gap-9 text-[14px] font-[400]  text-[#131212] !mt-8 cursor-pointer'>
 
              <span className="flex items-center gap-2 text-[14px] sm:text-[15px] link cursor-pointer font-[500]"> <FaRegHeart /> Add to Wishlist </span>
+                            <span className="flex items-center gap-2 text-[14px] sm:text-[15px] link cursor-pointer font-[500]"> <IoIosGitCompare />Add to Compare </span>
+
             </div>
              {/* Add Wishlist component end */}
           </div>
