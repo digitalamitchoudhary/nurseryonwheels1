@@ -13,6 +13,8 @@ import { IoIosGitCompare } from "react-icons/io";
 function ProductDetails() {
   const [productActionIndex, setProductActionIndex] = useState(null);
 
+  const[activeTab,setActiveTab]=useState("description");
+
   return (
     <>
       <div className="!py-5">
@@ -167,6 +169,142 @@ function ProductDetails() {
              {/* Add Wishlist component end */}
           </div>
         </div>
+
+        <div className="container !mt-10">
+        
+          <h2 className="text-[22px] font-[600] !mb-4">Product Details</h2>
+          <div className='flex gap-8'>
+                  <button className={`text-[17px] font-[500] ${activeTab==="description" ? "text-primary  !px-4 py-2 rounded-md" : "  text-black px-4 py-2 rounded-md"} hover:text-primary transition-colors`} onClick={() => setActiveTab("description")}>Description</button>
+                  <button className={`text-[17px] font-[500] ${activeTab==="productdetail" ? "text-primary  !px-4 py-2 rounded-md" : "  text-black px-4 py-2 rounded-md"} hover:text-primary transition-colors`} onClick={() => setActiveTab("productdetail")}>Product Details</button>
+                  <button className={`text-[17px] font-[500] ${activeTab==="review" ? "text-primary  !px-4 !py-2 rounded-md" : "  text-black px-4 py-2 rounded-md"} hover:text-primary transition-colors`} onClick={() => setActiveTab("review")}>Reviews (0)</button>
+
+                  
+          </div>
+            {activeTab==="description" && (
+                    <div className="shadow-md w-full !py-5 !px-8 rounded-md text-[14px] bg-gray-50 !mt-4">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    </div>
+                  )}  {activeTab==="productdetail" && (
+                    <div className="shadow-md w-full !py-5 !px-8 rounded-md text-[14px] bg-gray-50 !mt-4">
+                      <p>Product detail content goes here.</p>
+                      <div className="relative overflow-x-auto bg-neutral-primary-soft shadow-xs rounded-base border border-default">
+ <table className="w-full text-sm text-left rtl:text-right text-body">
+ <thead className="bg-neutral-secondary-soft border-b border-default">
+<tr >
+<th scope="col" className="!px-6 !py-3 bg-gray-200  font-semibold">
+  Product name
+ </th>
+  <th scope="col" className="!px-6 !py-3 bg-gray-200  font-semibold">
+  Color
+  </th>
+  <th scope="col" className="!px-6 !py-3 bg-gray-200  font-semibold">
+  Category
+ </th>
+  <th scope="col" className="!px-6 !py-3 bg-gray-200  font-semibold">
+  Price
+  </th>
+ <th scope="col" className="!px-6 !py-3 bg-gray-200  font-semibold">
+  Action
+ </th>
+ </tr>
+  </thead>
+
+ <tbody>
+ <tr className="odd:bg-neutral-primary even:bg-neutral-secondary-soft border-b border-default">
+<th scope="row"
+ className="!px-6 !py-4 font-medium text-heading whitespace-nowrap"
+ >
+Apple MacBook Pro 17&quot;
+        </th>
+        <td className="!px-6 !py-4">Silver</td>
+        <td className="!px-6 !py-4">Laptop</td>
+        <td className="!px-6 !py-4">$2999</td>
+        <td className="!px-6 !py-4">
+          <a href="#" className="font-medium text-fg-brand hover:underline">
+            Edit
+          </a>
+        </td>
+      </tr>
+
+      <tr className="odd:bg-neutral-primary even:bg-neutral-secondary-soft border-b border-default">
+        <th
+          scope="row"
+          className="!px-6 !py-4 font-medium text-heading whitespace-nowrap"
+        >
+          Microsoft Surface Pro
+        </th>
+        <td className="!px-6 !py-4">White</td>
+        <td className="!px-6 !py-4">Laptop PC</td>
+        <td className="!px-6 !py-4">$1999</td>
+        <td className="!px-6 !py-4">
+          <a href="#" className="font-medium text-fg-brand hover:underline">
+            Edit
+          </a>
+        </td>
+      </tr>
+
+      <tr className="odd:bg-neutral-primary even:bg-neutral-secondary-soft border-b border-default">
+        <th
+          scope="row"
+          className="!px-6 !py-4 font-medium text-heading whitespace-nowrap"
+        >
+          Magic Mouse 2
+        </th>
+        <td className="!px-6 !py-4">Black</td>
+        <td className="!px-6 !py-4">Accessories</td>
+        <td className="!px-6 !py-4">$99</td>
+        <td className="!px-6 !py-4">
+          <a href="#" className="font-medium text-fg-brand hover:underline">
+            Edit
+          </a>
+        </td>
+      </tr>
+
+      <tr className="odd:bg-neutral-primary even:bg-neutral-secondary-soft border-b border-default">
+        <th
+          scope="row"
+          className="!px-6 !py-4 font-medium text-heading whitespace-nowrap"
+        >
+          Google Pixel Phone
+        </th>
+        <td className="!px-6 !py-4">Gray</td>
+        <td className="!px-6 !py-4">Phone</td>
+        <td className="!px-6 !py-4">$799</td>
+        <td className="!px-6 !py-4">
+          <a href="#" className="font-medium text-fg-brand hover:underline">
+            Edit
+          </a>
+        </td>
+      </tr>
+
+      <tr className="odd:bg-neutral-primary even:bg-neutral-secondary-soft">
+        <th
+          scope="row"
+          className="!px-6 !py-4 font-medium text-heading whitespace-nowrap"
+        >
+          Apple Watch 5
+        </th>
+        <td className="!px-6 !py-4">Red</td>
+        <td className="!px-6 !py-4">Wearables</td>
+        <td className="!px-6 !py-4">$999</td>
+        <td className="!px-6 !py-4">
+          <a href="#" className="font-medium text-fg-brand hover:underline">
+            Edit
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+                    </div>
+                  )}
+                  {activeTab==="review" && (
+                    <div className="!mt-4">
+                      <p>Review content goes here.</p>
+                    </div>
+                  )}
+        </div>
+      
       </section>
     </>
   );
