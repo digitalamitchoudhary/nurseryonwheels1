@@ -17,6 +17,7 @@ function ProductDetails() {
 
   return (
     <>
+  
       <div className="!py-5">
         <div className="container">
           <Breadcrumbs aria-label="breadcrumb">
@@ -58,7 +59,7 @@ function ProductDetails() {
             </h1>
             <div className="flex items-center gap-3 ">
               <span className="text-gray-400  text-[13px]">
-                Brands : <span className="font-[500] text-black opacity-75"> House of Chikankari</span>
+                Brands : <span className="font-[500] text-black opacity-75"> House of Chikankari test</span>
               </span>
 
               <Rating
@@ -69,7 +70,7 @@ function ProductDetails() {
                 readOnly
               />
               <span className="text-[#666] cursor-pointer text-[13px]">
-                Review(5) 
+                Reviesw(5) 
               </span>
             </div>
 
