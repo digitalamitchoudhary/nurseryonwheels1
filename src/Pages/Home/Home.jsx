@@ -104,7 +104,7 @@ function Home() {
             </div>
             <div className="col2">
               <p className="mb-0 font-[500]">
-                Free Delivery Now On Your First Order and over $200
+               <a href="/products"> Free Delivery Now On Your First Order and over $200</a>
               </p>
             </div>
             <p className="font-bold text-[25px]">- Only ₹ 200*</p>
