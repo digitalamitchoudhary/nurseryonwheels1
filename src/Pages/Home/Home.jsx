@@ -20,6 +20,7 @@ import { Navigation } from 'swiper/modules';
 import Blogitem from '../../Components/Blogitem/Blogitem';
 import HomeBanner from '../../Components/HomeBanner/HomeBanner';
 import BannerBoxV2 from '../../Components/BannerBoxV2/BannerBoxV2';
+import { Link } from 'react-router-dom';
 
 function Home() {
   const [value, setValue] = React.useState(0);
@@ -104,7 +105,7 @@ function Home() {
             </div>
             <div className="col2">
               <p className="mb-0 font-[500]">
-               <a href="/products"> Free Delivery Now On Your First Order and over $200</a>
+               <Link to="/products"> Free Delivery Now On Your First Order and over $200</Link>
               </p>
             </div>
             <p className="font-bold text-[25px]">- Only ₹ 200*</p>
