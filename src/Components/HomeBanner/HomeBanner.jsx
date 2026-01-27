@@ -33,7 +33,7 @@ function HomeBanner() {
         className="HomeSlider w-full h-full"
       >  <SwiperSlide>
           <div className="item w-full h-full rounded-md overflow-hidden relative">
-            <img  src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_imageslider/views/img/sample-2.jpg"className="w-full h-full object-cover" />
+            <img  src="/banner/main-banner-1.jpg"className="w-full h-full object-cover" />
 
             <div className="info absolute top-0 -right-[100%] opacity-0 w-[50%] h-[100%] z-50 !p-8 flex items-center flex-col justify-center transition-all duration-700 ">
               <h4 className="text-[20px] font-[500] w-full text-left -right-[100%] relative opacity-0 !mb-3">Big Saving Days Sales</h4>
@@ -46,7 +46,7 @@ function HomeBanner() {
         </SwiperSlide>
         <SwiperSlide>
         <div className="item w-full h-full rounded-md overflow-hidden relative">
-        <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_imageslider/views/img/sample-1.jpg" className="w-full h-full object-cover"/>
+        <img src="/banner/main-banner-2.jpg" className="w-full h-full object-cover"/>
 
             <div className="info absolute top-0 -right-[100%] opacity-0 w-[50%] h-[100%] z-50 !p-8 flex items-center flex-col justify-center transition-all duration-700 ">
               <h4 className="text-[20px] font-[500] w-full text-left -right-[100%] relative opacity-0 !mb-3">Big Saving Days Sales</h4>
@@ -59,7 +59,7 @@ function HomeBanner() {
         </SwiperSlide>
         <SwiperSlide>
         <div className="item w-full h-full rounded-md overflow-hidden relative">
-        <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_imageslider/views/img/sample-2.jpg"className="w-full h-full object-cover" />
+        <img src="/banner/main-banner-1.jpg"className="w-full h-full object-cover" />
 
             <div className="info absolute top-0 -right-[100%] opacity-0 w-[50%] h-[100%] z-50 !p-8 flex items-center flex-col justify-center transition-all duration-700 ">
               <h4 className="text-[20px] font-[500] w-full text-left -right-[100%] relative opacity-0 !mb-3">Big Saving Days Sales</h4>
@@ -72,7 +72,7 @@ function HomeBanner() {
         </SwiperSlide>
         <SwiperSlide>
         <div className="item w-full h-full rounded-md overflow-hidden relative">
-        <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_imageslider/views/img/sample-1.jpg" className="w-full h-full object-cover"/>
+        <img src="/banner/main-banner-2.jpg" className="w-full h-full object-cover"/>
 
             <div className="info absolute top-0 -right-[100%] opacity-0 w-[50%] h-[100%] z-50 !p-8 flex items-center flex-col justify-center transition-all duration-700 ">
               <h4 className="text-[20px] font-[500] w-full text-left -right-[100%] relative opacity-0 !mb-3">Big Saving Days Sales</h4>
