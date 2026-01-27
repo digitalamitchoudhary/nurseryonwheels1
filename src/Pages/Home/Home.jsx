@@ -41,8 +41,8 @@ function Home() {
           </div>
           <div className="part2 flex items-center flex-col gap-2 justify-between h-full w-[30%]">
              
-            <BannerBoxV2 img={'../public/banner/sub-banner-1-1.jpg'} Link={"/"} info={"left"} />
-            <BannerBoxV2 img={'../public/banner/sub-banner-2-1.jpg'} Link={"/"} info={"right"} />
+            <BannerBoxV2 img={'/banner/sub-banner-1-1.jpg'} Link={"/"} info={"left"} />
+            <BannerBoxV2 img={'/banner/sub-banner-2-1.jpg'} Link={"/"} info={"right"} />
           </div>
         </div>
       </section>
