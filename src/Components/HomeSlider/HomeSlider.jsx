@@ -12,7 +12,7 @@ function HomeSlider() {
     <div className='homeSlider overflow-hidden !py-4'>
       <div className="container">
       <Swiper 
-       spaceBetween={80}
+       spaceBetween={100}
        loop={true}
       //  autoplay={{
       //   delay: 2000,
