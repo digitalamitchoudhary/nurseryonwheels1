@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaRegHeart } from "react-icons/fa";
 import Rating from '@mui/material/Rating';
 import '../ProductItem/ProductItem.css';
@@ -7,8 +7,11 @@ import Button from '@mui/material/Button';
 import { MdZoomOutMap } from "react-icons/md";
 import { IoGitCompareOutline } from "react-icons/io5";
 import Tooltip from '@mui/material/Tooltip';
+import { MyContext } from "../../App";
 
 function ProductItem({ test = '' }) {
+    const context = useContext(MyContext)
+
   return (
     <div className={`productItem ${test}`}>
       <div className="group imgWrapper  rounded-md  w-[100%]   overflow-hidden relative">
@@ -68,6 +71,7 @@ function ProductItem({ test = '' }) {
               },
               padding: 0,
             }}
+            onClick={()=>context.setOpenProductDetailModal(true)}
           >
             <MdZoomOutMap style={{ fontSize: '18px' }} />
           </Button>

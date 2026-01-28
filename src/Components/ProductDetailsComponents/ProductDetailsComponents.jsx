@@ -1,0 +1,150 @@
+import Rating from "@mui/material/Rating";
+import Button from "@mui/material/Button";
+import "./ProductDetailsComponents.css";
+import QuantityBox from "../../Components/QuantityBox/QuantityBox";
+import { FaCartShopping } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa";
+import { IoIosGitCompare } from "react-icons/io";
+import { useState } from "react";
+
+function ProductDetailsComponents() {
+
+     const [productActionIndex, setProductActionIndex] = useState(null);        
+  return (
+    <>
+      
+          <div className="productContent">
+            <h1 className="text-[25px] font-[600] !mb-2">
+              Chikankari Woven Kurta
+            </h1>
+            <div className="flex items-center gap-3 ">
+              <span className="text-gray-400  text-[13px]">
+                Brands :{" "}
+                <span className="font-[500] text-black opacity-75">
+                  {" "}
+                  House of Chikankari test
+                </span>
+              </span>
+
+              <Rating
+                name="size-small"
+                defaultValue={4.5}
+                size="small"
+                precision={0.5}
+                readOnly
+              />
+              <span className="text-[#666] cursor-pointer text-[13px]">
+                Reviesw(5)
+              </span>
+            </div>
+
+            <div className="flex items-center gap-3  !mt-4">
+              <span className="oldPrice line-through text-gray-500 text-[20px] font-[500]">
+                ₹530
+              </span>
+              <span className="price text-[#ff5252] text-[20px] font-[600]">
+                ₹530
+              </span>
+
+              <span className="text-[14px]  text-gray-500">
+                Available In Stock :{" "}
+                <span className="text-green-600 text-[14px] font-[600]">
+                  147 Items
+                </span>
+              </span>
+            </div>
+
+            <p className="!mt-3 !pr-10 !mb-5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+              neque rem id, sint nisi consequatur mollitia, consequuntur tenetur
+              optio exercitationem vero officiis aliquid cupiditate temporibus
+              corrupti fuga consectetur suscipit praesentium! In enim sequi
+              facilis nam quibusdam deleniti eos fugit cum optio, quo
+              consectetur totam officiis ipsa eveniet. Itaque, animi ratione!
+            </p>
+            {/* size buttons start*/}
+            <div className="flex items-center gap-3">
+              <span className="text-[16px]">Size:</span>
+              <div className="flex items-center gap-1 actions">
+                <Button
+                  className={`border border-gray-300 rounded-md px-4 py-2 mx-1 ${
+                    productActionIndex === 0
+                      ? "!bg-primary !text-white"
+                      : "bg-white text-black"
+                  }`}
+                  onClick={() => setProductActionIndex(0)}
+                >
+                  S
+                </Button>
+
+                <Button
+                  className={`border border-gray-300 rounded-md px-4 py-2 mx-1 ${
+                    productActionIndex === 1
+                      ? "!bg-primary !text-white"
+                      : "bg-white text-black"
+                  }`}
+                  onClick={() => setProductActionIndex(1)}
+                >
+                  M
+                </Button>
+
+                <Button
+                  className={`border border-gray-300 rounded-md px-4 py-2 mx-1 ${
+                    productActionIndex === 2
+                      ? "!bg-primary !text-white"
+                      : "bg-white text-black"
+                  }`}
+                  onClick={() => setProductActionIndex(2)}
+                >
+                  L
+                </Button>
+
+                <Button
+                  className={`border border-gray-300 rounded-md px-4 py-2 mx-1 ${
+                    productActionIndex === 3
+                      ? "!bg-primary !text-white"
+                      : "bg-white text-black"
+                  }`}
+                  onClick={() => setProductActionIndex(3)}
+                >
+                  XL
+                </Button>
+              </div>
+
+              {/* size buttons end*/}
+            </div>
+            <p className="text-[14px] !mt-5 !mb-2 text-black">
+              Free Shipping (Est. Delivery Time 2-3 Days)
+            </p>
+
+            {/* qutintity box component start */}
+            <div className="flex items-center gap-4 !mt-4 ">
+              <div className="qtyboxWrapper !w-[70px]">
+                <QuantityBox />
+              </div>
+              <Button className="btn-org !px-4 flex !text-[16px] gap-1">
+                {" "}
+                <FaCartShopping className=" text-[20px] !mr-1" /> Add to Cart
+              </Button>
+            </div>
+            {/* quantity box component end */}
+
+            {/* Add Wishlist component start */}
+            <div className=" flex items-center gap-9 text-[14px] font-[400]  text-[#131212] !mt-8 cursor-pointer">
+              <span className="flex items-center gap-2 text-[14px] sm:text-[15px] link cursor-pointer font-[500]">
+                {" "}
+                <FaRegHeart /> Add to Wishlist{" "}
+              </span>
+              <span className="flex items-center gap-2 text-[14px] sm:text-[15px] link cursor-pointer font-[500]">
+                {" "}
+                <IoIosGitCompare />
+                Add to Compare{" "}
+              </span>
+            </div>
+            {/* Add Wishlist component end */}
+          </div>
+    </>
+  )
+}
+
+export default ProductDetailsComponents
