@@ -1,64 +1,57 @@
-  
-import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import Header from './Components/Header/Header'
-import Home from './Pages/Home/Home'
-import Footer from './Components/Footer/Footer'
-import ProductListing from './Pages/ProductListing/ProductListing'
-import ProductDetails from './Pages/ProductDetails/ProductDetails'
-import { createContext, useState } from 'react'
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import Header from './Components/Header/Header';
+import Home from './Pages/Home/Home';
+import Footer from './Components/Footer/Footer';
+import ProductListing from './Pages/ProductListing/ProductListing';
+import ProductDetails from './Pages/ProductDetails/ProductDetails';
+import { createContext, useState } from 'react';
 
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
+
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import ProductDetailsComponents from './Components/ProductDetailsComponents/ProductDetailsComponents'
-import ProductZoom from './Components/ProductZoom/ProductZoom'
 
-import { IoCloseSharp } from "react-icons/io5";
+import ProductDetailsComponents from './Components/ProductDetailsComponents/ProductDetailsComponents';
+import ProductZoom from './Components/ProductZoom/ProductZoom';
 
+import { IoCloseSharp } from 'react-icons/io5';
+import Page404 from './Pages/404/Page404';
+import Login from './Pages/Login/Login';
 
-  const MyContext = createContext();
-
- 
+const MyContext = createContext();
 
 function App() {
- 
+  const [openproductdetailmodal, setOpenProductDetailModal] = useState(false);
+  const [fullWidth, setFullWidth] = useState(true);
+  const [maxWidth, setMaxWidth] = useState('lg');
 
-   const [openproductdetailmodal, setOpenProductDetailModal] = useState(false
-    
-   );
-    const [fullWidth, setFullWidth] =  useState(true);
-  const [maxWidth, setMaxWidth] =  useState('lg');
- 
-
- const handleClose = () => {
+  const handleClose = () => {
     setOpenProductDetailModal(false);
   };
 
-
   const value = {
- setOpenProductDetailModal,
-  }
+    setOpenProductDetailModal,
+  };
   return (
     <>
-    <MyContext.Provider value={value} >
-      <Header/>
-    <Routes>
-      <Route path={"/" }exact={true} element={<Home/>}/>
-      <Route path={"/products" }exact={true} element={<ProductListing/>}/>
-     <Route path={"/product/:id" }exact={true} element={<ProductDetails/>}/>
-    </Routes>
-    <Footer/>
-    </MyContext.Provider>
+      <MyContext.Provider value={value}>
+        <Header />
+        <Routes>
+          <Route path={'/'} exact={true} element={<Home />} />
+          <Route path={'/products'} exact={true} element={<ProductListing />} />
+          <Route path={'/product/:id'} exact={true} element={<ProductDetails />}/>
+          <Route path={'/login'} exact={true} element={<Login/>}/>
 
+          <Route path="*" exact={true} element={<Page404 />} />
+        </Routes>
+        <Footer />
+      </MyContext.Provider>
 
-     {/* <Button variant="outlined" onClick={handleClickOpen}>
+      {/* <Button variant="outlined" onClick={handleClickOpen}>
         Open alert dialog
       </Button> */}
-         <Dialog
+      <Dialog
         fullWidth={fullWidth}
         maxWidth={maxWidth}
         open={openproductdetailmodal}
@@ -85,9 +78,9 @@ function App() {
           </div>
         </DialogContent>
       </Dialog>
-  </>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;
 export { MyContext };

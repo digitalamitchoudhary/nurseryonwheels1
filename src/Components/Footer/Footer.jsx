@@ -18,7 +18,7 @@ import { AiOutlineYoutube } from "react-icons/ai";
 
 function Footer() {
   return (
-    <footer className="!py-5 bg-[#f1f1f1] ">
+    <footer className="!py-5 bg-[#fafafa] ">
       <div className="container">
         <div className="flex items-center justify-center gap-2 !py-8 !pb-8">
           <div className="col flex items-center flex-col justify-center group w-[20%]">

@@ -123,7 +123,7 @@ function ProductDetailsComponents() {
                 <QuantityBox />
               </div>
               <Button className="btn-org !px-4 flex !text-[16px] gap-1">
-                {" "}
+              
                 <FaCartShopping className=" text-[20px] !mr-1" /> Add to Cart
               </Button>
             </div>
