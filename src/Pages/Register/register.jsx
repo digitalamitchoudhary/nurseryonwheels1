@@ -26,13 +26,14 @@ function Register() {
       <div className="flex w-full !mb-10  !mt-10 justify-center items-center">
         <div className="flex-col flex items-center w-[25%] !pb-10 min-h-[300px] shadow-md bg-white rounded-md !mt-2 !mb-2">
           <h1 className=" w-full text-[18px] text-center !pt-5  font-[600]">
-            Login to your account
+                Register with a new account
+
           </h1>
           <div className="  !mr-1  w-[80%] flex flex-col  !mt-5  !ml-5 ">
             <form className="flex flex-col gap-4" action="">
-                            <TextField fullWidth required label="Name" />
+                            <TextField fullWidth required label="Full Name" />
 
-              <TextField fullWidth required label="Email" />
+              <TextField fullWidth required label="Email Id" />
               {/* <div className="relative">
                 <TextField
                   fullWidth
