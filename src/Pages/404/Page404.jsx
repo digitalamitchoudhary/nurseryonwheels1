@@ -44,7 +44,9 @@ export default function Page404() {
       />
 
       {/* Content */}
-      <Box textAlign="center" zIndex={1} px={3}>
+      <Box textAlign="center"  display="flex"
+  flexDirection="column"
+  alignItems="center"zIndex={1} px={3}>
         {/* Free plant SVG */}
         <Box
           component="img"
@@ -53,8 +55,6 @@ export default function Page404() {
           sx={{
             width: 180,
             mb: 2,
-            ml: 13,
-            
             animation: "float 4s ease-in-out infinite",
           }}
         />

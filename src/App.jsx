@@ -18,6 +18,7 @@ import ProductZoom from './Components/ProductZoom/ProductZoom';
 import { IoCloseSharp } from 'react-icons/io5';
 import Page404 from './Pages/404/Page404';
 import Login from './Pages/Login/Login';
+import Register from './Pages/Register/register';
 
 const MyContext = createContext();
 
@@ -42,7 +43,7 @@ function App() {
           <Route path={'/products'} exact={true} element={<ProductListing />} />
           <Route path={'/product/:id'} exact={true} element={<ProductDetails />}/>
           <Route path={'/login'} exact={true} element={<Login/>}/>
-
+<Route path={'/register'} exact={true} element={<Register/>}/>
           <Route path="*" exact={true} element={<Page404 />} />
         </Routes>
         <Footer />

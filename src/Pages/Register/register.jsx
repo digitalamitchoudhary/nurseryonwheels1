@@ -11,7 +11,7 @@ import { FcGoogle } from "react-icons/fc";
 import { IoIosEye } from "react-icons/io";
 import { IoIosEyeOff } from "react-icons/io";
 
-function Login() {
+function Register() {
   const [showPassword, setShowPassword] = useState(false);
 
   // const showPasswordHandle = () => {
@@ -30,6 +30,8 @@ function Login() {
           </h1>
           <div className="  !mr-1  w-[80%] flex flex-col  !mt-5  !ml-5 ">
             <form className="flex flex-col gap-4" action="">
+                            <TextField fullWidth required label="Name" />
+
               <TextField fullWidth required label="Email" />
               {/* <div className="relative">
                 <TextField
@@ -77,20 +79,15 @@ function Login() {
 />
 
 
-              <div>
-                <span className=" link font-[600] text-[15px] text-[#5a5959]">
-                  Forgot Password?
-                </span>
-              </div>
               <div className=" flex justify-center ">
-                <Button className="btn-org w-full !py-3 !font-[600]  flex !text-[14px] gap-1">
-                  Login
+                <Button className="btn-org w-full !py-3 !font-[600] flex !text-[14px] gap-1">
+                  Register
                 </Button>
               </div>
-              <div className=" flex justify-center ">
-                <span className="  text-center text-[15px] text-[#5a5959]">
-                  Not Registered?{" "}
-                  <span className=" font-[600] text-[#ff5252]"><a href="/register">Sign Up</a></span>
+              <div className=" flex justify-center  ">
+                <span className="  text-center   text-[15px] text-[#5a5959]">
+                      Already have an account? 
+                  <span className=" !pl-1  font-[600] text-[#ff5252]"><a href="/login">Login In</a></span>
                 </span>
               </div>
               <div className=" flex justify-center ">
@@ -98,8 +95,7 @@ function Login() {
                   Or continue with social account
                 </span>
               </div>
-
-             <div className=" flex justify-center ">
+           <div className=" flex justify-center ">
                 <Button className=" !font-[600] !bg-[#e7e7e7] !py-3 w-full flex items-center justify-center !text-[14px] !text-[#000000] gap-2">
                   <FcGoogle className="!text-[20px]" />
                   Login with Google
@@ -113,4 +109,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;
