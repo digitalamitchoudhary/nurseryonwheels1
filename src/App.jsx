@@ -19,6 +19,7 @@ import { IoCloseSharp } from 'react-icons/io5';
 import Page404 from './Pages/404/Page404';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/register';
+import Cartpanel from './Components/CartPanel/Cartpanel';
 
 const MyContext = createContext();
 
@@ -27,12 +28,22 @@ function App() {
   const [fullWidth, setFullWidth] = useState(true);
   const [maxWidth, setMaxWidth] = useState('lg');
 
+
+   
+      const [open, setOpen] = useState(false);
+  
+    const toggleDrawer = (newOpen) => () => {
+      setOpen(newOpen);
+    };
+
   const handleClose = () => {
     setOpenProductDetailModal(false);
   };
 
   const value = {
     setOpenProductDetailModal,
+    toggleDrawer,
+    setOpen,open
   };
   return (
     <>
@@ -47,6 +58,7 @@ function App() {
           <Route path="*" exact={true} element={<Page404 />} />
         </Routes>
         <Footer />
+        <Cartpanel />
       </MyContext.Provider>
 
       {/* <Button variant="outlined" onClick={handleClickOpen}>
@@ -79,6 +91,7 @@ function App() {
           </div>
         </DialogContent>
       </Dialog>
+      
     </>
   );
 }
