@@ -1,0 +1,22 @@
+
+
+
+/* Cart panel scrollbar */
+.cartItemsContainer::-webkit-scrollbar {
+  width: 6px !important;
+  height: 10px !important;
+}
+
+.cartItemsContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.cartItemsContainer::-webkit-scrollbar-thumb {
+  background: #00630d;  
+  border-radius: 5px;
+}
+
+.cartItemsContainer::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+ 
