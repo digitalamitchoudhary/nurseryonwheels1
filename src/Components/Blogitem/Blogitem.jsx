@@ -8,7 +8,7 @@ function Blogitem() {
   return (
     <div className='blogItem group   '>
         <div className='imgWrapper  w-[100%] overflow-hidden rounded-md cursor-pointer relative'> 
-            <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/psblog/b/lg-b-blog-6.jpg" className='w-full transition-all group-hover:rotate-1 group-hover:scale-105' alt="blog image" /> 
+            <img src="https://serviceapi.spicezgold.com/download/1741758993155_6-4.jpg" className='w-full transition-all group-hover:rotate-1 group-hover:scale-105' alt="blog image" /> 
             <span className='flex items-center justify-center  m-auto   rounded-sm  z-50 bg-[#ff5252] !p-1 !pr-2 gap-1 text-[11px] font-[500] text-white absolute bottom-[10%] left-[60%] '><IoMdTime className='text-[16px]' /> 5 April 2025
             </span>
          </div>
