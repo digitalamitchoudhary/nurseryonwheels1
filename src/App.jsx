@@ -20,6 +20,7 @@ import Page404 from './Pages/404/Page404';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/register';
 import Cartpanel from './Components/CartPanel/Cartpanel';
+import CartPage from './Pages/CartPage/CartPage';
 
 const MyContext = createContext();
 
@@ -56,6 +57,7 @@ function App() {
           <Route path={'/login'} exact={true} element={<Login/>}/>
 <Route path={'/register'} exact={true} element={<Register/>}/>
           <Route path="*" exact={true} element={<Page404 />} />
+           <Route path="/mycart" exact={true} element={<CartPage />} />
         </Routes>
         <Footer />
         <Cartpanel />

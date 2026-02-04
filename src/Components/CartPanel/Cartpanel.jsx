@@ -578,7 +578,7 @@ function Cartpanel() {
                  <div className="cartButton flex justify-between  items-center !px-2 w-full !mt-4">
   
   <Button
-    
+    href='/mycart'
     variant="contained"
     disableElevation
     className="btn-org !text-white !py-2.5 !px-12 !rounded-md"
@@ -587,7 +587,7 @@ function Cartpanel() {
   </Button>
 
   <Button
-     
+        href='/checkout'
     variant="outlined"
     disableElevation
     sx={{
